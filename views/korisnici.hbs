@@ -1,0 +1,39 @@
+<html>
+
+<head>
+    <title>Galerija | Book-a-table-Bihac</title>
+    <link rel="stylesheet" type="text/css" href="/css/places.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>MODULI: </h1>
+        <br><br><br>
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- :::::: Kartice :::::: -->
+        <div class="kartice-galerija">
+            {{#each users}}
+
+            <div class="kartica-mjesta">
+                <h3 class="kartica-slika">{{this.number}}</h3>
+                <a href="/userLocations/{{this.number}}">Gps lokacije</a>
+            </div>
+
+            {{/each}}
+
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+        <br><br><br>
+        <div class="footer">
+            <div class="divider"> </div>
+            Copyright 2019 &copy; Prikaz <br>
+            Design by <i> Ivan Ivusic&trade;</i>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

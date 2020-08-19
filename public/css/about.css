@@ -1,0 +1,392 @@
+@import url('https://fonts.googleapis.com/css?family=Allura&display=swap');
+/* Importovanje google fontova */
+
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+       cursor: url(../img/index/oth638.cur), default;
+}
+
+
+.nav {
+    padding: 4px 0px;
+}
+
+ul { /* pozicija navbara */
+    float: right;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+    ul li {
+        display: inline-block;
+    }
+
+        ul li a { /* izgled navbara */
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid #fff transparent;
+            text-shadow: 5px 5px 5px #000;
+            transition: 0.7s ease; /* brzina mijenjanja 'on-click' */
+        }
+
+            ul li a:hover { /* ponašanje navbara 'on-click' */
+                background-color: #996578;
+                color: #fff;
+                border-color: #996578;
+                border-radius: 10px;
+                text-shadow: none;
+                cursor: url(../img/index/oth630.cur), pointer;
+            }
+
+        ul li.active a { /* aktivan je dio navbara za poèetnu stranicu */
+            border: 1px solid #fff;
+            border-radius: 10px;
+        }
+
+.slikica img { /* podešavanje slike u gornjem desnom uglu */
+    float: right;
+    width: 35px;
+    height: auto;
+    margin-top: 15px;
+}
+
+.logo img { /* podešavanje logotipa */
+    float: left;
+    width: 55px;
+    height: auto;
+    margin-top: 8px;
+}
+
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+#wrapper0 { /* Wrapper korišten da se ne pomijera prva sekcija (Dobrodošli-sekcija) */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1356px;
+}
+
+.title { /* pozicioniranje naslova */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+    .title h1 { /* izgled naslova */
+        letter-spacing: 0.5rem;
+        color: #fff;
+        font-size: 70px;
+        text-shadow: 5px 5px 7px #000; /* sjena teksta, debljina i zamagljenost, boja crna */
+    }
+
+.divider { /* podešavanje dividera */
+    width: 150px;
+    height: 10px;
+    background-color: #996578;
+    margin: 20px auto;
+    margin-bottom: 40px;
+}
+
+
+.button { /* pozicioniranje buttona */
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.btn { /* izgled buttona */
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 10px 30px; /* top-bottom 10, left-right 30 */
+    color: #fff;
+    text-decoration: none;
+    transition: 0.7s ease; /* brzina mijenjanja 'on-click' */
+}
+
+    .btn:hover { /* ponašanje buttona 'on-click' */
+        background-color: #996578;
+        color: #fff;
+        border-color: #996578;
+        border-radius: 25px;
+        text-shadow: none;
+        cursor: url(../img/index/oth630.cur), pointer;
+    }
+
+.box {
+    width: 100%;
+    height: 600px;
+}
+
+.section-1 { /* fiksirana pozadina 1 */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/about/bihac1.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-2 {
+    height: 760px;
+}
+
+.tabela { /* ureðivanje tabele za about-us sekciju */
+    height: 550px;
+    line-height: 30px;
+    padding: 20px;
+}
+
+.slika-u-tabeli { /* pozicioniranje i ureðivanje slika sa strane tabele */
+    width: 230px;
+    height: 340px;
+    border-radius: 15px;
+    background-color: #996578;
+    padding: 5px;
+}
+
+.srednja-slika { /* pozicioniranje slike 'book-a-table' */
+    width: 810px;
+}
+
+.donja-slika { /* pozicioniranje donje srednje slike */
+    height: 340px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #996578;
+}
+
+
+.boxovi { /* pozicioniranje buttona */
+    transform: translate(45%, -190%);
+    position: absolute;
+    z-index: 1;
+}
+
+.boks { /* izgled buttona */
+    border: 3px solid;
+    border-radius: 10px;
+    padding: 10px 30px; /* top-bottom 10, left-right 30 */
+    color: #996578;
+    text-decoration: none;
+    transition: 0.7s ease; /* brzina mijenjanja 'on-click' */
+    border-color: #996578;
+    margin-right: 25px;
+    background-color: #fff;
+}
+
+    .boks:hover { /* ponašanje buttona 'on-click' */
+        background-color: #996578;
+        color: #fff;
+        border-color: #996578;
+        border-radius: 25px;
+        text-shadow: none;
+        cursor: url(../img/index/oth630.cur), pointer;
+    }
+
+#wrapper2 { /* Wrapper korišten da se ne pomijera druga sekcija (About-sekcija) */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1356px;
+}
+
+.section-3 { /* fiksirana pozadina 2 */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/about/bihac1.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-4 {
+    height: 550px;
+    background: #fff;
+}
+
+.section-5 { /* fiksirana pozadina 3 */
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../img/about/bihac1.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.section-6 { /* kontakt sekcija */
+    height: 40vh;
+    background: #fff;
+}
+
+.kontejner { /* pozicioniranje box-ova za kontakt */
+    position: absolute;
+    width: 100%;
+    top: 380%;
+    text-align: center;
+    transform: translate(0%, 75%);
+}
+
+
+.wrapper2 { /* Wrapper korišten da se ne pomijeraju boxovi */
+    margin-top: 10px;
+}
+
+    .wrapper2 h1 { /* Ureðivanje teksta 'Razvojni tim' */
+        text-align: center;
+        font-size: 30px;
+        font-weight: bold;
+        color: #3d3c3d;
+        text-transform: uppercase;
+        margin-top: 20px;
+    }
+
+.tim { /* postavljanje clanova u jedan red */
+    display: flex;
+    text-align: center;
+    width: auto;
+    justify-content: center;
+}
+
+.clan-tima { /*ureðivanje èlanova */
+    background-color: #996578;
+    margin: 20px 70px;
+    margin-bottom: 30px;
+    width: 300px;
+    padding: 15px;
+    line-height: 25px;
+    color: #e0e0e0;
+    position: relative;
+    transition: 0.6s ease;
+}
+
+    .clan-tima:hover {
+        border-radius: 10px;
+        box-shadow: 3px 3px 3px #000;
+        background-color: #755a66; /* 
+	^ ovo u kombinaciji s (***) 
+	omoguæuje da se zajedno 
+	promijenu boje pri klikanju */
+    }
+
+        .clan-tima:hover .tim-img {
+            background-color: #755a66; /* (***) */
+        }
+
+    .clan-tima h3 { /* ureðivanje imena */
+        color: #fff;
+        font-size: 26px;
+        margin-top: 80px;
+    }
+
+p.uloga { /* ureðivanje uloga */
+    color: #e0dcde;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin: 15px 0;
+}
+
+.tim-img { /* ureðivanje slike */
+    position: absolute;
+    top: -50px;
+    left: 90px;
+    background: #996578;
+    border-radius: 50%;
+    transition: 0.6s ease;
+}
+
+    .tim-img img {
+        padding: 10px;
+    }
+
+#fiksiranje { /* ovo je još jedan wrapper, koji omoguæuje da se ne pomièu sekcije kreatora pri resize stranice */
+    margin-left: auto;
+    margin-right: auto;
+    width: 1356px;
+}
+
+
+.kontakt { /* izgled box-ova za kontakt */
+    width: 220px;
+    height: 140px;
+    display: inline-block;
+    background: #996578;
+    color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top: 125px;
+    margin-bottom: 40px;
+    position: relative;
+    cursor: url(../img/index/oth630.cur), pointer;
+}
+
+#wrapper3 { /* Wrapper korišten da se ne pomijeraju boxovi za kontakt */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.kontakt i { /* pozicioniranje ikona unutar box-ova za kontakt */
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    line-height: 140px;
+    background: #734656;
+    z-index: 1;
+    transition: transform 0.7s;
+}
+
+.kontakt:hover i { /* kada se predje mišem preko gornjeg (z=1) dijela 
+	na kojem su ikone, box se povlaèi prema gore i otkriva se donji box */
+    transform: translateY(-40px);
+    cursor: url(../img/index/oth630.cur), pointer;
+}
+
+.kontakt span { /* pozicioniranje teksta unutar box-ova */
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px 0;
+}
+
+.kontakt:hover span { /* cursor pointer æe biti i ispod dominantnog z-index box-a */
+    cursor: url(../img/index/oth630.cur), pointer;
+}
+
+.kontakt-tekst { /* Pozicija i izgled teksta 'KONTAKT PODACI' */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #3d3c3d;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+.footer { /* Pozicija i izgled Footera */
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: bold;
+    color: #3d3c3d;
+    transform: translate(0%, -20%); /* ovim sam footer pozicionirala skroz na dno stranice */
+}
+
+::-webkit-scrollbar { /* kostumizacija scrollbara */
+    width: 10px;
+    background-color: #3d3c3d;
+}
+
+::-webkit-scrollbar-thumb { /* kostumizacija crtice */
+    border-radius: 15px;
+    background-color: #996578;
+}

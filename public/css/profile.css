@@ -1,0 +1,117 @@
+* {
+    margin: auto;
+    padding: 0;
+    font-family: Century Gothic;
+    box-sizing: border-box;
+    cursor: url(../img/index/oth638.cur), default;
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),url(/img/index/bihac1.jpg);
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.left {
+    width: 400px;
+    height: 100%;
+    float: left;
+    color: white;
+    background-color: rgba(0,0,0,0.45);
+}
+
+
+.divider { /* podešavanje dividera */
+    width: 570px;
+    height: 6px;
+    background-color: #996578;
+    margin: 20px auto;
+    background-color: rgba(0,0,0,0.4);
+}
+
+ul {
+    margin-top: 115px;
+    text-align: center;
+}
+
+    ul li { /* uredjivanje liste */
+        /*background-color: rgba(0,0,0,0.3);*/
+        padding: 10px 10px;
+    }
+
+        ul li:hover {
+            transition: 0.5s ease;
+            background-color: #52313c;
+            transform: translateY(1.5px);
+            cursor: url(../img/index/oth630.cur), pointer;
+        }
+
+            ul li:hover a {
+                color: #242122;
+                font-weight: bold;
+                cursor: url(../img/index/oth630.cur), pointer;
+                text-shadow: none;
+            }
+
+        ul li a { /* izgled teksta u navbaru */
+            text-decoration: none;
+            color: #fff;
+            padding: 5px 20px;
+            border: 1px solid #fff transparent;
+            text-shadow: 6px 6px 4px #000;
+            text-transform: uppercase;
+            line-height: 40px;
+            letter-spacing: 4px;
+        }
+
+        ul li a:hover {
+            transition: 0.5s ease;
+            color: #000;
+        }
+
+.boks { /* Box s podacima za profil */
+    width: 650px;
+    height: 400px;
+    background-color: #1a0b10;
+    color: #fff;
+    text-shadow: 6px 6px 4px #000;
+    position: absolute;
+    transform: translate(86%, 39%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+    opacity: 0.9;
+    box-shadow: 5px 5px 8px #000;
+}
+
+    .boks:hover {
+        transform: 0.5s ease;
+        box-shadow: 6px 6px 10px #000;
+    }
+
+    .boks h1 {
+        font-size: 30px;
+        font-weight: lighter;
+        margin-top: 20px;
+        letter-spacing: 3px;
+    }
+
+.podaci {
+    margin-top: 20px;
+    line-height: 35px;
+    letter-spacing: 3px;
+    text-shadow: 5px 5px 5px #000;
+}
+
+.slika {
+    width: 120px;
+    height: 130px;
+    position: absolute;
+    transform: translate(200%, -100%);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: #1a0b10;
+}

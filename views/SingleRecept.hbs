@@ -1,0 +1,38 @@
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <link rel="stylesheet" type="text/css" href="/css/singlePlace.css">
+
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<div id="login-message"></div>
+
+Restoran: {{recept.title}}<br>
+<img class="kartica-slika" src="{{recept.image}}" alt="Amfora">
+Sacuvaj recept, uz komentar<br>
+<form method="POST" action="">
+    <textarea id="{{recept.id}}" name="comment" rows="4" cols="50">
+    </textarea>
+    <button value="{{recept.id}}" id="save-recept-button">Sacuvaj</button>
+</form>
+<h4>Podaci o : </h4>
+{{#each recept.extendedIngredients}}
+<!-- Ovdje je vidljivo samo sve unutar place.seats -->
+<h4>~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~</h4>
+Odjeljak: {{this.aisle}}<br> <!-- Zato svi atributi koji su izvan, moraju biti ../-->
+
+{{#ifEquals ../status "admin" }}
+<a href="/reservations/create/{{../place._id}}/{{this._id}}">Rezervacije</a>
+{{/ifEquals}}
+{{#ifEquals ../status "korisnik" }}
+Date:
+<form method="POST" action="/reservations/create/{{../place._id}}/{{this._id}}">
+    <input type="date" name="deadline" />
+    <button type="submit">Rezervisi</button>
+</form>
+{{/ifEquals}}
+{{/each}}
+
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/saveRecept.js"></script>

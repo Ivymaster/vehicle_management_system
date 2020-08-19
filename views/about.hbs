@@ -1,0 +1,202 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>O nama | Book-a-table-Bihać</title>
+    <link rel="stylesheet" type="text/css" href="/css/about.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+</head>
+
+<body>
+    <div id="wrapper0">
+        <div class="section-1 box">
+            <div class="main">
+                <div class="nav">
+                    <!-- Klasa za navbar -->
+                    <div class="slikica">
+                        <!-- Klasa za logo -->
+                        <img src="/img/index/menu.png">
+                    </div>
+                    <div class="logo">
+                        <!-- Klasa za logo -->
+                        <img src="/img/index/cafe.png">
+                    </div>
+
+                    <ul>
+                        <li><a href="/">Početna</a></li>
+                        <li class="active"><a href="/about">O nama</a></li>
+                        <li><a href="/contact">Kontakt</a></li>
+                        <li><a href="/places">Galerija restorana</a></li>
+                        {{#ifEquals status "korisnik"}}
+                        <!-- <li><a href="/reservations">Moje rezervacije</a></li> -->
+                        <li><a href="/users/me">Moj profil</a></li>
+                        <li><a href="/users/logOut">Logout</a></li>
+                        {{/ifEquals}}
+                        {{#ifEquals status "vlasnik"}}
+                        <!-- <li><a href="/reservations">Moji restorani</a></li> -->
+                        <li><a href="/users/me">Moj profil</a></li>
+                        <li><a href="/users/logOut">Logout</a></li>
+                        {{/ifEquals}}
+                        {{#ifEquals status "admin"}}
+                        <!-- <li><a href="#">Klijenti</a></li>
+            <li><a href="#">Vlasnici</a></li> -->
+                        <li><a href="/users/me">Moj profil</a></li>
+                        <li><a href="/users/logOut">Logout</a></li>
+                        {{/ifEquals}}
+                        {{#ifEquals status "none"}}
+                        <li><a href="/users/signUp">Registracija</a></li>
+                        <li><a href="/users/logIn">Login</a></li>
+                        {{/ifEquals}}
+                    </ul>
+
+                </div>
+            </div>
+            <div class="title">
+                {{#ifEquals status "admin"}}
+                <h1> Dobrodošli, admin </h1>
+                {{/ifEquals}}
+                {{#ifEquals status "none"}}
+                <h1> DOBRODOŠLI </h1>
+                {{/ifEquals}}
+                {{#ifDoubleEquals status "admin" "none"}}
+                <h1> Dobrodošli, {{username}} </h1>
+                {{/ifDoubleEquals}}
+            </div>
+
+            <div class="button">
+                <a href="/users/signUp" class="btn">PRIJAVI SE</a>
+                <a href="/places" class="btn">GALERIJA</a>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    <div id="wrapper0">
+        <div class="section-2 box">
+            <!-- Sekcija O NAMA -->
+            <div class="tabela">
+                <p align="center">
+                <table cellspacing="5">
+                    <tr>
+                        <td width="10%">
+                            <img class="slika-u-tabeli" src="/img/about/1.jpg">
+                        </td>
+                        <td width="60%">
+                            <img class="srednja-slika" src="/img/about/onama1.png">
+                            <!-- Kreiranje buttona za login -->
+                            <div class="boxovi">
+                                <a href="/places" class="boks">REZERVIŠI STOL</a>
+                                <a href="/users/signUp" class="boks">DODAJ RESTORAN</a>
+                            </div>
+                        </td>
+                        <td width="10%">
+                            <img class="slika-u-tabeli" src="/img/about/2.jpg">
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <img class="slika-u-tabeli" src="/img/about/3.jpg">
+                        </td>
+                        <td align="center">
+                            <img class="donja-slika" src="/img/about/buking.png">
+                        </td>
+                        <td>
+                            <img class="slika-u-tabeli" src="/img/about/4.jpg">
+                        </td>
+                    </tr>
+                </table>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper0">
+        <div class="section-3 box"></div>
+    </div>
+
+    <!-- Koristim wrapper 'fiksiranje' da se ne bi slike pomijerale kada se stranica smanji -->
+    <div id="fiksiranje">
+        <div class="section-4 box">
+
+            <div class="wrapper2">
+                <h1>Razvojni tim</h1>
+                <div class="divider"> </div>
+                <div class="tim">
+                    <div class="clan-tima">
+                        <div class="tim-img">
+                            <img src="/img/about/ivan.png" alt="Ivan Ivusic">
+                        </div>
+                        <h3>Ivan Ivušić</h3>
+                        <p class="uloga">junior developer</p>
+                        <p>
+                            Ivan Ivušić je student treće godine
+                            Elektrotehničkog odsjeka na Tehničkom fakultetu Bihać. U našem timu, pored ostalih zadataka,
+                            praktičan je u back-end kodovanju i radu s bazom podataka.
+                        </p>
+                    </div>
+                    <div class="clan-tima">
+                        <div class="tim-img">
+                            <img src="/img/about/nejra.png" alt="Nejra Melkic">
+                        </div>
+                        <h3>Nejra Melkić</h3>
+                        <p class="uloga">junior developer</p>
+                        <p>
+                            Nejra Melkić je studentica treće godine
+                            Elektrotehničkog odsjeka na Tehničkom fakultetu Bihać. U našem timu, pored ostalih
+                            zadataka, praktična je u front-end kodovanju, povezivanju saradnika i uredjivanju
+                            dokumentacije.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="wrapper0">
+        <div class="section-5 box"></div>
+    </div>
+
+    <!-- Koristim wrapper da se sekcija ne pomijera prilikom smanjivanja prozora -->
+    <div id="wrapper3">
+        <div class="section-6 box">
+            <!-- Tekst "Kontakt podaci" -->
+            <div class="kontakt-tekst">KONTAKT PODACI</div>
+            <div class="divider"> </div>
+            <!-- Tri kontejnera za kontakt -->
+
+            <div class="kontejner">
+
+                <div class="kontakt">
+                    <i class="fas fa-envelope"></i>
+                    <span>bookingapbihac@gmail.com </span>
+                </div>
+
+                <div class="kontakt">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>(+387)037 311-829</span>
+                </div>
+
+                <div class="kontakt">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Bosanskih kraljeva 3, Bihac</span>
+                </div>
+
+
+                <!-- Footer -->
+                <div class="footer">
+                    Copyright 2019 &copy; Book-a-table-Bihac <br>
+                    Design by <i> Nejra Melkic&trade; </i> i <i> Ivan Ivusic&trade;</i>
+                </div>
+            </div>
+        </div> <!-- Kraj �este sekcije -->
+    </div>
+
+
+
+</body>
+
+</html>

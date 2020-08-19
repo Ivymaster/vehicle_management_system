@@ -1,0 +1,44 @@
+<html>
+
+<head>
+    <title>Izmjena</title>
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<body>
+    <!--<div class="header">
+
+    </div>-->
+
+    <div class="mainsign">
+        <div id="login-message"></div>
+
+        <div class="signupbox">
+            <div class="signup-naslov"> Izmjena </div>
+
+            <form method="POST" action="/recepts/savedRecept/{{recept._id}}" id="updateCommentForm">
+
+                Restoran: {{APIrecept.title}}<br>
+                <img class="kartica-slika" src="{{APIrecept.image}}" alt="Amfora">
+                <br><br>
+                <label class="form-label" name="comment">Comment:</label><br>
+                <input class="form-input" type="text" value={{recept.comment}} name="comment" required="required"
+                    id="update-firstname" />
+                <br>
+
+                <button class="form-sign-btn" type="submit">Save</button><br>
+
+            </form>
+
+
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/updateProfile.js"></script>
+
+</html>

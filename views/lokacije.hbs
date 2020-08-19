@@ -1,0 +1,58 @@
+<html>
+
+<head>
+    <title>Galerija | Book-a-table-Bihac</title>
+    <link rel="stylesheet" type="text/css" href="/css/places.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<body>
+
+    <div class="main">
+        <h1>LOKACIJE: </h1>
+
+        <!-- :::::: Search Bar :::::: -->
+        <form action="" method="POST" class="">
+            <!-- <input type="text" name="search" placeholder="Pretraga okruga.."> -->
+
+            <div class="">
+
+                <label name="pocetak">Pocetni datum:</label><br>
+                <input name="pocetak" type="date"><br>
+                <label name="kraj">Krajnji datum:</label><br>
+                <input name="kraj" type="date"><br>
+                <input type="submit" value="Pretraga!" class="pretraga-btn">
+            </div>
+
+
+        </form>
+
+        <!-- ~~~~~~~~~~~~~~~~~~~~~~~~ -->
+        <!-- :::::: Kartice :::::: -->
+        <div class="kartice-galerija">
+            {{#each lokacije}}
+
+            <h3>Latitude: {{this.latitude}}</h3>
+            <h3>Longitude: {{this.longitude}}</h3>
+            <h3>Vrijeme: {{this.vrijeme}}</h3>
+
+
+            {{/each}}
+
+        </div>
+        <!-- ~~~~~~~~~~~~~~~~~~~~ -->
+        <br><br><br> <br><br><br>
+        <br><br><br> <br><br><br>
+        <br><br><br> <br><br><br>
+        <br><br><br> <br><br>
+        <div class="footer">
+            <div class="divider"> </div>
+            Copyright 2019 &copy; Prikaz <br>
+            Design by <i> Ivan Ivusic&trade;</i>
+        </div>
+
+
+    </div>
+</body>
+
+</html>

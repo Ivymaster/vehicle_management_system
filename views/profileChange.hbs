@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Izmjena</title>
+    <link rel="stylesheet" type="text/css" href="/css/signup.css">
+    <link rel="stylesheet" type="text/css" href="/css/profile.css">
+
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+</head>
+
+<body>
+    <!--<div class="header">
+
+    </div>-->
+
+    <div class="mainsign">
+        <div id="login-message"></div>
+
+        <div class="signupbox">
+            <div class="signup-naslov"> Izmjena </div>
+
+            <form method="POST" action="" id="updateDataForm">
+
+                <label class="form-label" name="firstname">Ime:</label><br>
+                <input class="form-input" type="text" value={{user.lastname}} name="firstname" required="required"
+                    id="update-firstname" />
+                <br>
+
+                <label class="form-label" name="lastname">Prezime:</label><br>
+                <input class="form-input" type="text" value={{user.lastname}} name="lastname" required="required"
+                    id="update-lastname" />
+                <br>
+
+                <label class="form-label" name="username">Korisnicko ime:</label><br>
+                <input class="form-input" type="text" value={{user.username}} name="username" required="required"
+                    id="update-username" />
+                <br>
+
+
+                <label class="form-label" name="email">E-mail:</label><br>
+                <input class="form-input" type="email" value={{user.email}} name="email" required="required"
+                    id="update-email" /> <br>
+
+                <img class="slika" src="/img/users/{{user.photo}}" id="userImage"><br>
+                <input type="file" accept="image/*" name="photo" id="update-photo" />
+                <label name="photo" for="photo"> Izaberi sliku </label><br />
+
+                <button class="form-sign-btn" type="submit">Save</button><br>
+
+            </form>
+
+            <form method="POST" action="" id="updatePasswordForm">
+
+                <label class="form-label" name="password">Stara ifra:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                    name="oldPassword" id="old-password" /> <br>
+
+                <label class="form-label" name="password">Nova Sifra:</label><br>
+                <input class="form-input" minlength="8" type="password" placeholder="Unesi sifru" value=""
+                    name="newPassword" id="update-password" /> <br>
+
+                <label class="form-label" name="passwordConfirm">Sifra provjera:</label><br>
+                <input class="form-input" minlength="8" type="passwordConfirm" placeholder="Unesi sifru" value=""
+                    name="newPasswordConfirm" id="update-passwordConfirm" /> <br>
+
+                <button class="form-sign-btn" type="submit">Save</button><br>
+
+            </form>
+        </div>
+    </div>
+
+
+    </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script type="text/javascript" src="/js/updateProfile.js"></script>
+
+</html>

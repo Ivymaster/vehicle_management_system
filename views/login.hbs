@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" type="text/css" href="/css/login.css">
+    <link rel="shortcut icon" href="/img/index/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+
+</head>
+
+<body>
+    <!--<div class="header">
+
+    </div>-->
+
+    <div class="mainanan">
+        <div id="login-message"></div>
+        <div class="loginbox">
+            <div class="login-naslov"> Logztttin </div>
+
+            <form method="POST" action="" id="loginForm">
+
+                <label class="form-label" name="username">Username</label>
+                <input class="form-input" type="text" placeholder="Unesi korisnicko ime" value="" name="username"
+                    id="username" required="required" /> <br>
+
+                <label class="form-label" name="password">Password</label>
+                <input class="form-input" type="password" placeholder="Unesi sifru" value="" name="password"
+                    id="password" required="required" minlength="8" /> <br>
+
+                <button type="submit" class="form-log-btn">Log in</button><br />
+                <a href="/users/signUp">Nemate račun? Prijavite se!</a><br>
+                <a type="submit" href="/users/forgotPassword">Zaboravili ste šifru?</a>
+            </form>
+        </div>
+    </div>
+    <!-- <div class="footer">
+
+    </div>-->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="text/javascript" src="/js/login.js"></script>
+
+</body>
+
+</html>
