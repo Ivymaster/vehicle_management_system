@@ -1,4 +1,7 @@
 # gpsData
-Aplikacija za provjeru rada digitalnog sistema, koja prima HTTP zahtjeve putem GSM mreze, sa proslijeđenim brojem SIM kartice i GPS koordinatama. Ista sprema koordinate i SIM broj,
-kao atribute entiteta "Korisnik". Aplikacija kreirana isključivo radi demonstracije rada sistema.  Kreirana korištenjem Express razvojnog okvira i NodeJS razvojne
-platforme.
+
+Web app, created as a testing environment for GPS/GSM system.
+
+Web app receives HTTP requests, via the GSM network, with parameters that consist of SIM number and GPS coordinates. 
+These parameters are saved in a nonrelational database. 
+The app was built with ExpressJS.
