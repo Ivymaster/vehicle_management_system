@@ -1,7 +1,9 @@
-# gpsData
+# Vechicle management system for intoxicated persons
 
-Web app, created as a testing environment for GPS/GSM system.
+Management system for company vehicles. 
 
-Web app receives HTTP requests, via the GSM network, with parameters that consist of SIM number and GPS coordinates. 
-These parameters are saved in a nonrelational database. 
-The app was built with ExpressJS.
+This system is built as a modular box, that connects to the car's battery supply. It requires multiple conditions to be set (RFID module, alcohol vapor sensor), in order to start the vehicle.
+
+The system sends the current GPS data, using the GSM module, to the http server. These data can be viewed using the web app, built with NodeJs, and the ExpressJS framework.
+
+This project is only a concept project and requires many additional changes to be usable, to any degree, in the real world.
